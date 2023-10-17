@@ -60,19 +60,16 @@ if __name__ == "__main__":
         print('QUANDO PRESSIONAR 1 ou 2 ou 3 ou 4 FALE IMEDIATAMENTE NO MICROFONE\n5 Gravando infinito')
         print('1 - Eden\n2 - On\n3 - Off\n4 - Marvin\n5 - Background recording')
         op = input()
-
-        match int(op):
-            case 1:
-                iniciar_gravacao(EDEN_PATH)
-            case 2:
-                iniciar_gravacao(ON_PATH)
-            case 3:
-                iniciar_gravacao(OFF_PATH)
-            case 4:
-                iniciar_gravacao(MARVIN_PATH)
-            case 5:
-                background_recording()
-            case _:
-                break
-
+        op = int(op)
+        
+        if (op == 1):
+            iniciar_gravacao(EDEN_PATH)
+        elif (op == 2):
+            iniciar_gravacao(ON_PATH)
+        elif (op == 3):
+            iniciar_gravacao(OFF_PATH)
+        elif (op == 4):
+            iniciar_gravacao(MARVIN_PATH)
+        elif (op == 5):
+            background_recording()
 
