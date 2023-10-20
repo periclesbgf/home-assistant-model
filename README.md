@@ -19,6 +19,7 @@ $ python main.py
 ## Como compilar o modelo
 1. Escolha o kernel que o python especificado
 2. Rode o notebook
+
 *Não esqueça de ter habilitado a extensão jupyter*
 ### Sobre os arquivos:
 - sample_generator.py (Gravar o som para preencher o banco de dados)
@@ -30,6 +31,7 @@ $ python main.py
 - seaborn
 - librosa
 - pydub
+
 *Caso haja algum problema no pyaudio, tente instalar o pacote portaudio*
 ### Lembrete:
 - *Esse modelo foi baseado no modelo do Tensorflow, ele reconhecerá uma palavra de cada vez*
