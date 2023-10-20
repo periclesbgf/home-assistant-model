@@ -24,9 +24,9 @@ $ python main.py
 ### Sobre os arquivos:
 - sample_generator.py (Gravar o som para preencher o banco de dados)
 ### Pacotes instalados na venv:
-- numpy
-- tensorflow
-- pyaudio
+- numpy (versão: 1.26.1)
+- tensorflow (versão: 2.14.0)
+- pyaudio (versão: 0.2.13)
 - matplotlib (versão: 3.7.2)
 - seaborn
 - librosa
