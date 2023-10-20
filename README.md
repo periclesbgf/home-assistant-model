@@ -13,15 +13,12 @@ $ git clone https://github.com/periclesbgf/home-assistant-model.git
 ```
 ## Como executar o programa
 ```bash
-$ source venv_eden/bin/activate
 $ cd "model" 
 $ python main.py
 ```
-*Não esqueça de sair da venv ao para o uso, com o comando '''deactivate'''*
 ## Como compilar o modelo
-1. Entre na venv
-2. Escolha o kernel que tenha a venv
-3. Rode o notebook
+1. Escolha o kernel que o python especificado
+2. Rode o notebook
 *Não esqueça de ter habilitado a extensão jupyter*
 ### Sobre os arquivos:
 - sample_generator.py (Gravar o som para preencher o banco de dados)
@@ -29,7 +26,7 @@ $ python main.py
 - numpy
 - tensorflow
 - pyaudio
-- matplotlib
+- matplotlib (versão: 3.7.2)
 - seaborn
 - librosa
 - pydub
