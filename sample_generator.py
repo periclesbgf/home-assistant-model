@@ -25,6 +25,7 @@ def verify_dir():
 
 # Função para gravar áudio
 def gravar_audio(samplerate, duration):
+    time.sleep(0.2)
     print("Gravando áudio...")
     audio_data = sd.rec(int(samplerate * duration), samplerate=samplerate, channels=1, dtype='int16')
     sd.wait()  # Aguarda até que a gravação seja concluída
@@ -61,7 +62,7 @@ if __name__ == "__main__":
         print('1 - Eden\n2 - On\n3 - Off\n4 - Marvin\n5 - Background recording')
         op = input()
         op = int(op)
-        
+
         if (op == 1):
             iniciar_gravacao(EDEN_PATH)
         elif (op == 2):
