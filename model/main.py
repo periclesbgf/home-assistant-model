@@ -7,7 +7,7 @@ import pathlib
 
 commands = ['_background_noise_', 'background', 'eden', 'marvin', 'off', 'on']
 
-loaded_model = models.load_model("model/saved")
+loaded_model = models.load_model("saved")
 
 def predict_mic():
     audio = record_audio()
