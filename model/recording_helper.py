@@ -8,23 +8,23 @@ RATE = 16000
 p = pyaudio.PyAudio()
 
 def record_audio():
+    p = pyaudio.PyAudio()
     stream = p.open(
-        format=FORMAT,
-        channels=CHANNELS,
-        rate=RATE,
+        format=pyaudio.paInt16,
+        channels=1,
+        rate=16000,
         input=True,
-        frames_per_buffer=FRAMES_PER_BUFFER
+        output=False,
+        frames_per_buffer=3200
     )
-
     frames = []
-    seconds = 1
-    for i in range(0, int(RATE / FRAMES_PER_BUFFER * seconds)):
-        data = stream.read(FRAMES_PER_BUFFER)
+    for _ in range(int(16000 / 3200)):  # Captura áudio por 1 segundo
+        data = stream.read(3200)
         frames.append(data)
 
     stream.stop_stream()
     stream.close()
-    
+
     return np.frombuffer(b''.join(frames), dtype=np.int16)
 
 def terminate():

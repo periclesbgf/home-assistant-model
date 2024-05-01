@@ -5,7 +5,7 @@ from recording_helper import record_audio, terminate
 from tf_helper import preprocess_audiobuffer
 import pathlib
 
-commands = ['_background_noise_', 'background', 'eden', 'marvin', 'off', 'on']
+commands = ['background', 'eden']
 
 loaded_model = models.load_model("saved")
 
