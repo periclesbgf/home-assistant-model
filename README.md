@@ -32,6 +32,9 @@ $ python main.py
 - librosa
 - pydub
 
+- pip install numpy==1.26.1 tensorflow==2.14.0 pyaudio==0.2.13 matplotlib==3.7.2 seaborn librosa pydub
+
+
 *Caso haja algum problema no pyaudio, tente instalar o pacote portaudio*
 ### Lembrete:
 - *Esse modelo foi baseado no modelo do Tensorflow, ele reconhecerá uma palavra de cada vez*
